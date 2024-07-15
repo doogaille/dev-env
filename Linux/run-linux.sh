@@ -40,21 +40,21 @@ case $ID in
     echo "Arch Linux !\r\n"
 
     echo "Update OS..."
-    sudo pacman -Syu
+    sudo pacman -Syu --noconfirm
 
     # Install zsh if not installed (required for the next step)
     if ! command_exists zsh; then
       echo "zsh not found, installing..."
-      sudo pacman -S zsh
+      sudo pacman -S --noconfirm zsh
       sudo chsh -s $(which zsh) $USER
       touch ~/.zshrc
     else
       echo "zsh is already installed."
     fi
 
-    echo "\r\nLaunching script 'install-ubuntu.sh' with zsh...";
-    chmod +x "$SCRIPT_PATH/install-ubuntu.sh"
-    zsh "$SCRIPT_PATH/install-ubuntu.sh"
+    echo "\r\nLaunching script 'install-arch.sh' with zsh...";
+    chmod +x "$SCRIPT_PATH/install-arch.sh"
+    zsh "$SCRIPT_PATH/install-arch.sh"
     ;;
 
   ol)
