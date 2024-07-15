@@ -42,7 +42,7 @@ fi
 # Check if the current terminal is iTerm2
 if [ "$TERM_PROGRAM" != "iTerm.app" ]; then
   echo "This script requires iTerm2. Please run it in iTerm2 next time, switching..."
-  open /Applications/iTerm.app $SCRIPT_PATH/setup-mac.sh
+  open /Applications/iTerm.app $SCRIPT_PATH/install-mac.sh
   exit 1
 fi
 
