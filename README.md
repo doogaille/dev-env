@@ -16,52 +16,27 @@ To set up your terminal and VS Code environnement you can create symbolic links 
 
 ### Linux
 
-#### Terminal setup : 
-
-```sh
-ln -sf $(pwd)/Linux/terminal/.bashrc ~/.bashrc
-ln -sf $(pwd)/Linux/terminal/.zshrc ~/.zshrc
-ln -sf $(pwd)/Linux/terminal/config.json ~/.config/terminal/config.json
-```
-
-#### VS Code setup:
-
-```sh
-ln -sf $(pwd)/Linux/vscode/settings.json ~/.config/Code/User/settings.json
-ln -sf $(pwd)/Linux/vscode/extensions.json ~/.config/Code/User/extensions.json
-```
+Work in progress...
 
 ### Mac
 
-#### Terminal setup: 
-
+#### Install
 ```sh
-ln -sf $(pwd)/Mac/terminal/.bash_profile ~/.bash_profile
-ln -sf $(pwd)/Mac/terminal/.zshrc ~/.zshrc
-ln -sf $(pwd)/Mac/terminal/config.json ~/.config/terminal/config.json
+cd Mac/
+chmod +x install-mac.sh
+./install-mac.sh
 ```
 
-#### VS Code setup:
-
+#### Uninstall
 ```sh
-ln -sf $(pwd)/Mac/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf $(pwd)/Mac/vscode/extensions.json ~/Library/Application\ Support/Code/User/extensions.json
+cd Mac/
+chmod +x uninstall-mac.sh
+./uninstall-mac.sh
 ```
 
 ### Windows (PowerShell)
 
-#### Terminal setup:
-
-```sh
-New-Item -ItemType SymbolicLink -Path $PROFILE -Target $(Resolve-Path Windows/terminal/PowerShell_profile.ps1)
-```
-
-#### VS Code Setup:
-
-```sh
-New-Item -ItemType SymbolicLink -Path "$env:APPDATA\Code\User\settings.json" -Target $(Resolve-Path Windows/vscode/settings.json)
-New-Item -ItemType SymbolicLink -Path "$env:APPDATA\Code\User\extensions.json" -Target $(Resolve-Path Windows/vscode/extensions.json)
-```
+Work in progress...
 
 ### Contributions
 
