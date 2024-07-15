@@ -30,8 +30,8 @@ fi
 
 echo "\r\n @@ Reset Terminal settings :\r\n"
 
-rm -rf .oh-my-zsh 
-rm -rf .p10k.zsh 
+rm -rf .oh-my-zsh
+rm -rf .p10k.zsh
 rm -rf ~/.zsh*
 rm -rf ~/.zprofile
 rm -rf ~/.zcomp*
