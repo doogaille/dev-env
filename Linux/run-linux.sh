@@ -52,9 +52,9 @@ case $ID in
       echo "zsh is already installed."
     fi
 
-    echo "\r\nLaunching script 'install-arch.sh' with zsh...";
-    chmod +x "$SCRIPT_PATH/install-arch.sh"
-    zsh "$SCRIPT_PATH/install-arch.sh"
+    echo "\r\nLaunching script 'install-arch.zsh' with zsh...";
+    chmod +x "$SCRIPT_PATH/install-arch.zsh"
+    zsh "$SCRIPT_PATH/install-arch.zsh"
     ;;
 
   ol)
