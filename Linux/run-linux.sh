@@ -17,6 +17,10 @@ case $ID in
   ubuntu)
     echo "Ubuntu !\r\n"
 
+    echo "Update OS..."
+    sudo apt-get update
+    sudo apt-get -y dist-upgrade
+
     # Install zsh if not installed (required for the next step)
     if ! command_exists zsh; then
       echo "zsh not found, installing..."
@@ -34,6 +38,9 @@ case $ID in
 
   arch)
     echo "Arch Linux !\r\n"
+
+    echo "Update OS..."
+    sudo pacman -Syu
 
     # Install zsh if not installed (required for the next step)
     if ! command_exists zsh; then
